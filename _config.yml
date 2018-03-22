@@ -2,7 +2,7 @@ title: Chris Mitropoulos
 description: "PhD Candidate in Computer Engineering @Rutgers State University HCI Group  "
 google_analytics: 
 show_downloads: true
-theme: jekyll-theme-tactile
+theme: jekyll-theme-slate
 
 gems:
   - jekyll-mentions
