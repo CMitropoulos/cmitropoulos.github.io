@@ -20,5 +20,7 @@ Enjoying good times with friends
 </li>
 </ul>
 
+
+[LinkedIn Profile ](https://www.linkedin.com/in/christosmitropoulos) <br>
+
 More coming soon...
-[LinkedIn Profile ](https://www.linkedin.com/in/christosmitropoulos)
