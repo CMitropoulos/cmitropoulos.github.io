@@ -1,7 +1,7 @@
 
 <ul>
 <li>
-  Doing research on Networks, Human Computer Interaction and Privacy
+  Doing research on Machine Learning, Human Computer Interaction and Security
 </li>
 <li>
   Holding an Electrical & Computer Engineering MEng Degree with major in Networks and Software Engineering from National Technical University of Athens (NTUA)
@@ -19,4 +19,6 @@ Playing Basketball whenever I can
 Enjoying good times with friends
 </li>
 </ul>
+
+More coming soon...
 [LinkedIn Profile ](https://www.linkedin.com/in/christosmitropoulos)
