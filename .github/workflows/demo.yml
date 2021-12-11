@@ -1,19 +1,23 @@
 name: compile-latex
-on: [push]
+on:
+  push:
+    branches:
+      - 'master'
 jobs:
-  Explore-GitHub-Actions:
-    runs-on: docker://blang/latex:latest
-    steps:
-      - name: Install latex stuff 
-        run: |
-          sudo ln -snf /usr/share/zoneinfo/Etc/UTC /etc/localtime \
-          && sudo echo "Etc/UTC" > /etc/timezone \
-          && sudo apt-get update \
-          && sudo apt-get upgrade -y \
-          && sudo apt-get install texlive-latex-base texlive-latex-extra texlive-fonts-recommended xzdec -y \
-          && sudo rm -rf /var/lib/apt/lists/*
-
-      - name: Compile tex into pdf
-        run: |
-          pdflatex -output-directory assets/resume assets/resume/ChristosMitropoulos - Resume.tex
-      - run: echo "🍏 This job's status is ${{ job.status }}."
+    compile-latex:
+      runs-on: ubuntu-20.04
+      steps:
+        -
+          name: Checkout
+          uses: actions/checkout@v2
+        -
+          name: Login to Docker Hub
+          uses: docker/login-action@v1
+          with:
+            username: ${{ secrets.DOCKER_HUB_USERNAME }}
+            password: ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}
+        - name: Compile tex into pdf
+          uses: docker/blang/latex:ubuntu
+          run: |
+            pdflatex -output-directory assets/resume assets/resume/ChristosMitropoulos - Resume.tex
+        - run: echo "🍏 This job's status is ${{ job.status }}."
