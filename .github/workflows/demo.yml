@@ -4,12 +4,14 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-20.04
     steps:
-      - name: Install latex stuff
+      - name: Install latex stuff 
         run: |
-          apt-get update \
-          && apt-get upgrade -y \
-          && apt-get install texlive-latex-base texlive-latex-extra texlive-fonts-recommended xzdec -y \
-          && rm -rf /var/lib/apt/lists/*
+          sudo ln -snf /usr/share/zoneinfo/Etc/UTC /etc/localtime \
+          && sudo echo "Etc/UTC" > /etc/timezone \
+          && sudo apt-get update \
+          && sudo apt-get upgrade -y \
+          && sudo apt-get install texlive-latex-base texlive-latex-extra texlive-fonts-recommended xzdec -y \
+          && sudo rm -rf /var/lib/apt/lists/*
 
       - name: Compile tex into pdf
         run: |
