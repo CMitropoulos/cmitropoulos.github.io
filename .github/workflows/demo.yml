@@ -20,10 +20,10 @@ jobs:
         password: ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}
 
     - name: Pull image from DockerHub
-      run: docker pull blang/latex
+      run: docker pull cmitropoulos/latex:latest
 
     - name: Run image in container
-      run: docker run --detach blang/latex
+      run: docker run -it  -v "$(pwd)"/assets/resume/:/data/assets/resume cmitropoulos/latex:latest /bin/bash
     
     - name: Compile latex
       run: pdflatex -output-directory assets/resume assets/resume/ChristosMitropoulos - Resume.tex
