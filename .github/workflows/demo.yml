@@ -1,4 +1,4 @@
-name: compile-latex
+name: ci
 on:
   push:
     branches:
