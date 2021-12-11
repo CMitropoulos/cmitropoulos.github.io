@@ -2,7 +2,7 @@ name: compile-latex
 on: [push]
 jobs:
   Explore-GitHub-Actions:
-    runs-on: ubuntu-20.04
+    runs-on: docker://blang/latex:latest
     steps:
       - name: Install latex stuff 
         run: |
