@@ -1,0 +1,251 @@
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://cmitropoulos.github.io/}{\Large Christos Mitropoulos}} & Email : \href{mailto:chris.mitropoulos@gmail.com}{chris.mitropoulos@gmail.com}\\
+   & Mobile : +1-732-895-3357 \\
+\end{tabular*}
+
+%-----------OBJECTIVE-----------------
+\section{Summary}
+Experienced Data Scientist with strong Data Engineering skills that has mainly worked in the invalid traffic and fraud detection space. Interested in full stack roles and solving problems end-to-end, from research to deployment and performance monitoring. 
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Oracle Advertising - MOAT}{New York, NY}
+      {Senior Data Scientist}{Jun. 2019 -- present}
+      \begin{itemize}
+      		\item Performing exploratory data analysis on ad measurement data for desktop, mobile and connected TV devices
+      		\item Designing, implementing and automating data pipelines
+      		\item Designing, implementing and automating machine learning pipelines
+      		\item{Tools: } {Python, scikit-learn, pandas, spark, pymc, SQL, linux, Airflow, Kubernetes, Argo Workflows, Grafana, Prometheus} 
+      \end{itemize}
+  	 \resumeSubheading
+      {Perspecta Labs (former Vencore Labs, Applied Communication Sciences)}{Baskin Ridge, NJ}
+      {Cyber Security Research Intern}{Jun. 2018 -- Aug. 2018}
+      	\begin{itemize}      	
+  			\item Developing botnets of the Fast Flux family, on top of the CyberVAN tesbed.
+  			\item Evaluating the performance of the botnets using intrusion detection systems and machine learning based techniques.
+  			\item{Tools: }{C++, Winsock, GoLang, Python, Linux and Windows operating systems.}
+      	\end{itemize}
+	\resumeSubheading
+	   {Rutgers, The State University of New Jersey}{New Brunswick, NJ}
+       {Research Assistant - HCI \& Security Engineering Lab - Advisor: Prof. Janne Lindqvist}{Sep. 2016 -- May 2019}
+	 \resumeSubheading
+      {Rutgers, The State University of New Jersey}{New Brunswick, NJ}
+      {Lead Teaching Assistant - Computer Architecture Lab}{Sep. 2016 -- May 2019}
+      	\begin{itemize}      	
+  			\item Teaching Assembly MIPS  to approximately 80 students. 
+  			\item Preparing and grading lab assignments.
+      	\end{itemize}
+	\resumeSubheading
+      {Rutgers, The State University of New Jersey}{New Brunswick, NJ}
+      {Research Internship}{Jun. 2014 -- Sep. 2014}
+      	\begin{itemize}      	
+      		\item{Research Areas: }{Pattern Recognition, Machine Learning, Security and Privacy, Human Computer Interaction}
+      	\end{itemize}
+     \resumeSubheading
+      {Digi4sites.com}{Athens, Greece}
+      {Software Engineer}{Jun. 2012-- Sep. 2014}
+      	\begin{itemize}      	
+      		\item{Responsibilities: }{Developing custom websites using HTML, CSS, jQuery, MySQL; Server administration using Amazon Web Services (AWS) tools.}   
+        \end{itemize}     		
+  \resumeSubHeadingListEnd
+
+%Interaction, Security Engineering
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Rutgers, The State University of New Jersey, HCI \& Security Engineering Lab }{New Brunswick, NJ}
+      {Masters in Electrical and Computer Engineering ; Advisor: Prof Janne Lindqvist; GPA: 3.9}{Sep. 2016 -- May 2019}
+      	\resumeItemListStart
+        	\resumeItem{Courses}{Massive Data Mining and Learning, Parallel and Distributed Computing, Software Engineering, Regression Analysis, Security Engineering, Operating Systems}
+        	\resumeItem{Online courses}{Neural Networks and Deep Learning}
+        \resumeItemListEnd
+    \resumeSubheading
+      {National Technical University of Athens (NTUA)}{Athens, Greece}
+      {Masters of Engineering in Electrical and Computer Engineering;  GPA 3.6}{Sep. 2010 -- Sep. 2015}
+      \resumeItemListStart
+        \resumeItem{Thesis}{Created an android based \textbf{Gesture Authentication System} using Machine Learning Models, Hidden Markov Models; Grade                10/10}
+          \resumeItem{Courses}{Artificial Intelligence, Databases and Information Systems Engineering, Algorithms and Data Structures, Programming Languages, Computer  - Communication - Mobile Networks}
+        \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+
+
+%--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+   
+  \resumeItemListStart
+        	\resumeItem{Languages}{Java, Python, C/C++, MATLAB, Javascript,  SQL}
+        	\resumeItem{Frameworks/Libraries}{Scikit Learn, Pandas, Hadoop, SQL, AirFlow, Kubernetes, Argo, pthreads, ISPC, Django, }
+        	\resumeItem{OS}{Linux, Windows}
+    \resumeItemListEnd
+%-----------PROJECTS-----------------
+\section{Research Projects}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Machine Learning and Social Protocols for Enhancing Spectrum Access}{}
+      {Advisor: Prof. Janne Lindqvist}{Sep. 2016 -- Mar 2019}
+      		\begin{itemize}
+      			\item Designed experiments to measure participants' behavior under lossy networks.
+      			\item Designed experiments to get objective video quality assessment of videos streamed under lossy networks.
+      		\end{itemize}
+  \resumeSubheading
+      {Video Guessing Attacks}{}
+      {Advisor: Prof. Janne Lindqvist}{Mar. 2018 -- Mar 2019}
+      		\begin{itemize}
+      			\item Perform PIN guessing attacks based on video with no view of the victim's screen.
+      		\end{itemize}   
+ \resumeSubheading
+      {Human Behavior Prediction}{}
+      {Advisor: Prof. Janne Lindqvist}{Sep. 2016 -- Mar 2019}
+      		\begin{itemize}
+      			\item Create predictive models of human behavior based on collected data.
+      			\item Built a web-based tool to facilitate data collection.
+      		\end{itemize}  
+      		      		
+	
+  \resumeSubheading
+      {Analyze System Administrators' Vulnerability-handling Behavior}{}
+      {Advisor: Prof. Janne Lindqvist}{Oct. 2017 -- Dec. 2017}
+      		\begin{itemize}
+      			\item Mined data from IPv4 network scanners and disclosed vulnerabilities datasets.
+      			\item Applied exploratory data analysis methods and created models with predictive power.
+      		\end{itemize}  
+\resumeSubheading
+      {Novel Video Quality metric for Long Videos}{}
+      {Advisor: Prof. Janne Lindqvist}{Sep. 2017 -- Dec. 2017}
+      		\begin{itemize}
+      			\item Developed a novel video quality metric for longer videos, taking into account video freeze events and frame distortions.
+      		\end{itemize}  
+      		 
+\resumeSubheading
+      {Social Protocols for Enhancing Network Connectivity Sharing}{}
+      {Advisor: Prof. Janne Lindqvist}{Sep. 2017 -- Dec. 2017}
+      		\begin{itemize}
+      			\item Designed experiments to measure participants network connectivity sharing choice based on nudges.
+      			\item Built a web-based tool to facilitate data collection.
+      		\end{itemize}  
+
+
+      		 
+      	         	   
+      		
+\resumeSubHeadingListEnd	
+
+%------------course projects-----
+\section{Course Projects}
+      	\resumeItemListStart
+      	\resumeItem{Massive Data Minining and Learning}{TheNextHit: Predicting movie success and building Content and Collaborative Filtering recommendation system.}
+      	\resumeItem{Parallel Computing Project}{Wrote CUDA C/C$++$ code for multi-core CPU architectures and heterogeneous CPU-GPU system applications}
+      	 \resumeItem{User Authentication System}{Developed an User authentication system running on Android smart-phones. User-generated gestures are used for identifying the users. Hidden Markov Models were used for modeling the gestures}
+        \resumeItem{Restaurant Automation System}{Developed an automation system using the Django Python Framework and the MVC design architecture}
+      		\resumeItem{Hotel Management Information System}{Developed a Hotel Management System using Dynamic Web Technologies; PHP, html, css, javascript, MySQL} 		
+      	\resumeItemListEnd
+%
+
+
+%---------------Honors ans Awards-------
+\section{Honors and Awards}
+ \resumeItemListStart
+ 	\resumeItem{2018}{ Winner of the Rutgers State University TA/GA Development Fund}
+	\resumeItem{2017}{ Winner of the Gerondelis Foundation Grant}
+ \resumeItemListEnd
+%---------------Academic service-------
+\section{Academic Service}
+ \resumeItemListStart
+\resumeItem{SOUPS 2018}{External Reviewer} 
+\resumeItem{WWW 2018}{External Reviewer}
+\resumeItem{SOUPS 2017}{External Reviewer} 
+\resumeItem{IMWUT 2017}{External Reviewer}
+ \resumeItemListEnd
+
+
+%----------------Papers---------
+\section{Papers}
+\begin{itemize}
+	\item Xianyi Gao, Yulong Yang, Can Liu, \textbf{Christos Mitropoulos}, Oulasvirta Antti, Janne Lindqvist. "Forgetting of Passwords: Ecological Theory and Data",USENIX Security '18\\
+\end{itemize}
+
+%\section{Papers currently under submission}
+%\begin{itemize}
+%	\item Meghan McLean, \textbf{Christos Mitropoulos}, Janne Lindqvist. "Tragedy of the Common Hotspot: Social Protocols for Enhancing Network %Connectivity Sharing", CSCW '18
+%\end{itemize}
+ 
+
+
+
+
+%-------------------------------------------
+\end{document}
