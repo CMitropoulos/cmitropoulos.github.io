@@ -22,8 +22,9 @@ jobs:
     - name: Pull image from DockerHub
       run: docker pull cmitropoulos/latex:latest
     
-    - name: Build resume
+    - name: checkout action
       uses: actions/checkout@v1
+    - name: create pdf
       run: docker run  -v "$(pwd)"/assets/resume/:/data/assets/resume cmitropoulos/latex:latest   pdflatex -output-directory /data/assets/resume /data/assets/resume/ChristosMitropoulos\ -\ Resume.tex
     - name: check for changes
       run: git status
