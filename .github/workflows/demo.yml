@@ -21,9 +21,19 @@ jobs:
 
     - name: Pull image from DockerHub
       run: docker pull cmitropoulos/latex:latest
-
-    - name: Run image in container
+    
+    - name: Build resume
+    - uses: actions/checkout@v1
       run: docker run  -v "$(pwd)"/assets/resume/:/data/assets/resume cmitropoulos/latex:latest   pdflatex -output-directory /data/assets/resume /data/assets/resume/ChristosMitropoulos\ -\ Resume.tex
-
+    - name: check for changes
+      run: git status
+    - name: stage changed files
+      run: git add .
+    - name: commit changed files
+      run: git commit -m "Auto updating resume"
+    - name: fetch from master
+      run: git fetch origin master
+    - name: push code to master
+      run: git push origin HEAD:master
     - name: Results 
       run: echo "🍏 This job's status is ${{ job.status }}."
