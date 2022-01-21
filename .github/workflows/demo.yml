@@ -23,7 +23,7 @@ jobs:
       run: docker pull cmitropoulos/latex:latest
 
     - name: Run image in container
-      run: docker run  -v "$(pwd)"/assets/resume/:/data/assets/resume cmitropoulos/latex:latest   pdflatex -output-directory assets/resume assets/resume/ChristosMitropoulos\ -\ Resume.tex
+      run: docker run  -v "$(pwd)"/assets/resume/:/data/assets/resume cmitropoulos/latex:latest   pdflatex -output-directory /data/assets/resume /data/assets/resume/ChristosMitropoulos\ -\ Resume.tex
 
     - name: Results 
       run: echo "🍏 This job's status is ${{ job.status }}."
